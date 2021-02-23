@@ -1,9 +1,7 @@
 # Project 0
 
-Web Programming with Python and JavaScript
+Este projecto fue creado como project0 del curso WEB50xni
 
-Mi homepage se basa en mi emprendimiento, se llama Alldretty. 
-
-Alldretty es el nombre mi empresita peque  encargada de arreglar todo tipo de eventos. 
-
-Entonces, tenemos una barra principal con la cual puedes navergar atravez del sitio, conociendo un poco de info sobre nosotros, sobre el staff y a la vez una tabla con link a nuestras otras cuentas para recibir mas info o recepcionar. 
+Trae consigo información de primera mano de mi pequeño emprendimiento que eche a andar hace algunos años con mi madre y un amigo.
+Alldretty es una empresa encargada de arreglar y coordinar todo tipo de eventos,
+te invitamos a navegar en la página para que conozcas un poco más de nosotros.
