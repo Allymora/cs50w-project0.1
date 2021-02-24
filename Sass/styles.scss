@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+//herencias 
+
+%margen-sup
+{
+  margin-top: 5px;
+}
+
+%margen-center 
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%margin-infe
+{
+  margin-bottom: 15px;
+}
+
+
+body 
+{
+  h1, h2, h3, h4, h5, h6, p, ol
+  {
+    font-family: 'Libre Baskerville', serif; 
+    color: blanchedalmond;
+    @extend %margen-sup;
+    @extend %margin-infe;
+
+  }
+}
+
+    #Manager {color:blanchedalmond;font-style:bold;}
+    #Coordinador {color:blanchedalmond;font-style:bold;}
+    #Disenador{ color:blanchedalmond;font-style:bold;}
+
+      
+
+  

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body ol {
+  margin-top: 5px; }
+
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body ol {
+  margin-bottom: 15px; }
+
+body h1, body h2, body h3, body h4, body h5, body h6, body p, body ol {
+  font-family: 'Libre Baskerville', serif;
+  color: blanchedalmond; }
+
+#Manager {
+  color: blanchedalmond;
+  font-style: bold; }
+
+#Coordinador {
+  color: blanchedalmond;
+  font-style: bold; }
+
+#Disenador {
+  color: blanchedalmond;
+  font-style: bold; }
+
+/*# sourceMappingURL=styles.css.map */
