@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
 $color-base:blanchedalmond;
-$color-base1: gray ;
+$color-base2: #25479E;
+$color-base1:  #260801;
 //herencias 
 
   %margen-sup
@@ -39,7 +40,7 @@ body
 }
     #Manager {color:$color-base;font-style:bold;}
     #Coordinador {color:$color-base;font-style:bold;}
-    #Disenador{ color:$color-base;font-style:bold;}
+    #Diseñador{ color:$color-base;font-style:bold;}
 
       
 .portafolio 
@@ -104,21 +105,31 @@ body
 
     transform: scale(1);
   }
-
+     
 
   //query
 
  @media only screen and (max-width: 780px)
  {
-     body {
+     #staff {
           background-color: $color-base1;
+          display: flex;
+          flex-direction: column;
      }
  }
 
  @media only screen and (min-width: 780px)
  {
-     body {
-          background-color: $color-base1;
+     #staff {
+          background-color: $color-base2;
+          display: flex;
+          flex-direction: row;
+           li 
+           {
+             margin-left: 5px;
+             margin-right: 5px;
+        }
+         
      }
  }
 

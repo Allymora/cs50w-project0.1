@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 body h1, body h2, body h3, body h4, body h5, body h6, body ol, body p, body li {
   margin-top: 5px;
@@ -23,7 +24,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body ol, body p, body li {
   font-style: bold;
 }
 
-#Disenador {
+#Diseñador {
   color: blanchedalmond;
   font-style: bold;
 }
@@ -107,14 +108,32 @@ body h1, body h2, body h3, body h4, body h5, body h6, body ol, body p, body li {
 }
 
 @media only screen and (max-width: 780px) {
-  body {
-    background-color: gray;
+  #staff {
+    background-color: #260801;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
 @media only screen and (min-width: 780px) {
-  body {
-    background-color: gray;
+  #staff {
+    background-color: #25479E;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  #staff li {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 
