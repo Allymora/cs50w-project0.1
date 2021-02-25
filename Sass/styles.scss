@@ -1,41 +1,133 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 
+$color-base:blanchedalmond;
+$color-base1: gray ;
 //herencias 
 
-%margen-sup
-{
-  margin-top: 5px;
-}
+  %margen-sup
+  {
+      margin-top: 5px;
+  }
 
-%margen-center 
-{
-  margin-left: auto;
-  margin-right: auto;
-
+  %margen-center 
+  {
+     margin-left: auto;
+    margin-right: auto;
+  }
 
 %margin-infe
 {
   margin-bottom: 15px;
 }
 
-
 body 
 {
-
-  h1, h2, h3, h4, h5, h6, p, ol
+ 
+  
+  h1, h2, h3, h4, h5, h6, ol, p, li
   {
-    font-family: 'Libre Baskerville', serif; 
-    
-    @extend %margen-sup;
-    @extend %margin-infe;
+     font-family: 'Libre Baskerville', serif; 
+     font-size: 300 px;
+     font-weight: bold;;
+      @extend %margen-sup;
+     @extend %margin-infe;
+
 
   }
 }
-
-    #Manager {color:blanchedalmond;font-style:bold;}
-    #Coordinador {color:blanchedalmond;font-style:bold;}
-    #Disenador{ color:blanchedalmond;font-style:bold;}
+    #Manager {color:$color-base;font-style:bold;}
+    #Coordinador {color:$color-base;font-style:bold;}
+    #Disenador{ color:$color-base;font-style:bold;}
 
       
+.portafolio 
+  {
+    padding: 60px 0;
+     width: 90%;
+      max-width: 1000px;
+      margin: auto;
+     overflow: hidden;
+  }
+  .galeria-port
+    {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+  .imagen-port 
+  {
+    width: 24%;
+    height: 150px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+  }
+
+  .imagen-port > img
+  {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+  }
+
+  .hover-galeria{
+        position: absolute;
+        width: 100%;
+        height: 100% ;
+        top: 0;
+        transform: scale(0);
+        background: hsla(273, 91%, 27%, 0.7);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+  }
+
+  .hover-galeria img{
+
+      width: 50px;
+  }
+
+  .hover-galeria p{
+    color: blanchedalmond; 
+
+  }
+
+  .imagen-port:hover .hover-galeria {
+
+    transform: scale(1);
+  }
+
+
+  //query
+
+ @media only screen and (max-width: 780px)
+ {
+     body {
+          background-color: $color-base1;
+     }
+ }
+
+ @media only screen and (min-width: 780px)
+ {
+     body {
+          background-color: $color-base1;
+     }
+ }
+
+ .row > div {
+  padding: 20px;
+  background-color:darkblue;
+  border: 2px solid black;
 }
-  
+
+ //layout
+
+ 
